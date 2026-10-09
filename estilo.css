@@ -18,3 +18,57 @@ img {
     height: auto;
     display: block;
 }
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background-color: #6B8F71;
+    padding: 15px 25px;
+}
+
+.barra-navegacion {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+/* Botones de navegacion */
+.boton-nav {
+    text-decoration: none;
+    color: #44382B;
+    background-color: #F4E9D8;
+    padding: 7px 14px;
+    border-radius: 5px;
+}
+
+.boton-nav:hover {
+    background-color: #DFA66B;
+}
+
+.boton-nav.activo {
+    background-color: #DFA66B;
+    font-weight: bold;
+}
+
+/* Distribucion del contenido */
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+aside {
+    width: 25%;
+    background-color: #DFA66B;
+    padding: 15px;
+}
+
+section {
+    flex: 1;
+    min-width: 0;
+    padding: 15px;
+}
