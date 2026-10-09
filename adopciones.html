@@ -3,65 +3,174 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Huellitas Comunitarias | Adopciones</title>
-    <link rel="stylesheet" href="estilo.css">
+
+    <!-- Conexion con la hoja de estilos -->
     <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body>
 
-    <!-- Encabezado -->
+    <!-- Encabezado principal del sitio -->
     <header>
-        <h1>Huellitas Comunitarias</h1>
+        <div class="encabezado-texto">
 
-        <nav class="barra-navegacion">
-            <a href="index.html">Inicio</a>
-            <a href="adopciones.html">Adopciones</a>
-            <a href="donaciones.html">Donaciones</a>
-        </nav>
+            <h1>Huellitas Comunitarias</h1>
+            <p>Encuentra un nuevo mejor amigo</p>
+
+            <!-- Menu de navegacion -->
+            <nav class="barra-navegacion">
+                <a href="index.html" class="boton-nav">
+                    Inicio
+                </a>
+
+                <a href="adopciones.html" class="boton-nav activo">
+                    Adopciones
+                </a>
+
+                <a href="donaciones.html" class="boton-nav">
+                    Donaciones
+                </a>
+            </nav>
+
+        </div>
+
+        <!-- Logo del proyecto -->
+        <img src="imágenes/logo.jpg"
+             alt="Logo de Huellitas Comunitarias"
+             class="logo-pequeno">
     </header>
 
-    <!-- Galeria de animales -->
-    <main>
-        <section>
+
+    <!-- Contenido principal de la pagina -->
+    <main class="pagina-completa">
+
+        <section class="seccion-completa">
+
             <h2>Animales que buscan un hogar</h2>
-            <p>Conoce a nuestros amigos y descubre la adopción responsable.</p>
-            
-<div class="galeria">
 
-    <article class="ficha-animal">
-        <img src="imágenes/perro1.jpg" alt="Perro llamado Max">
-        <h3>Max</h3>
-        <p>Edad: 2 años</p>
-        <p>Juguetón, cariñoso y activo.</p>
-    </article>
+            <p>
+                Conoce a nuestros amigos y descubre la adopcion
+                responsable. Cada animal merece una familia
+                que le brinde amor, cuidado y proteccion.
+            </p>
 
-    <article class="ficha-animal">
-        <img src="imágenes/gato1.jpg" alt="Gata llamada Luna">
-        <h3>Luna</h3>
-        <p>Edad: 1 año</p>
-        <p>Tranquila, curiosa y cariñosa.</p>
-    </article>
 
-    <article class="ficha-animal">
-        <img src="imágenes/perro2.jpg" alt="Perro llamado Toby">
-        <h3>Toby</h3>
-        <p>Edad: 3 años</p>
-        <p>Amigable y juguetón.</p>
-    </article>
+            <!-- Galeria de fichas de perros y gatos -->
+            <div class="galeria">
 
-    <article class="ficha-animal">
-        <img src="imágenes/gato2.jpg" alt="Gatito llamado Mishi">
-        <h3>Mishi</h3>
-        <p>Edad: 6 meses</p>
-        <p>Curioso y lleno de energía.</p>
-    </article>
+                <!-- Primera ficha: Max -->
+                <article class="ficha-animal">
 
-</div>
+                    <img src="imágenes/perro1.jpg"
+                         alt="Perro llamado Max">
+
+                    <h3>Max</h3>
+
+                    <p><strong>Edad:</strong> 2 años</p>
+
+                    <p>
+                        Jugueton, cariñoso y activo.
+                        Necesita una familia que disfrute
+                        jugar y salir a caminar con el.
+                    </p>
+
+                </article>
+
+
+                <!-- Segunda ficha: Luna -->
+                <article class="ficha-animal">
+
+                    <img src="imágenes/gato1.jpg"
+                         alt="Gata llamada Luna">
+
+                    <h3>Luna</h3>
+
+                    <p><strong>Edad:</strong> 1 año</p>
+
+                    <p>
+                        Tranquila, curiosa y cariñosa.
+                        Necesita un hogar seguro donde
+                        reciba atencion y cuidados.
+                    </p>
+
+                </article>
+
+
+                <!-- Tercera ficha: Toby -->
+                <article class="ficha-animal">
+
+                    <img src="imágenes/perro2.jpg"
+                         alt="Perro llamado Toby">
+
+                    <h3>Toby</h3>
+
+                    <p><strong>Edad:</strong> 3 años</p>
+
+                    <p>
+                        Amigable y jugueton. Le gusta
+                        convivir con las personas y
+                        necesita paseos y cariño.
+                    </p>
+
+                </article>
+
+
+                <!-- Cuarta ficha: Mishi -->
+                <article class="ficha-animal">
+
+                    <img src="imágenes/gato2.jpg"
+                         alt="Gatito llamado Mishi">
+
+                    <h3>Mishi</h3>
+
+                    <p><strong>Edad:</strong> 6 meses</p>
+
+                    <p>
+                        Curioso y lleno de energia.
+                        Necesita un ambiente seguro
+                        para crecer sano y feliz.
+                    </p>
+
+                </article>
+
+            </div>
+
+
+            <!-- Informacion sobre adopcion responsable -->
+            <article class="aviso">
+
+                <h3>¿Te gustaria adoptar?</h3>
+
+                <p>
+                    Adoptar significa asumir el compromiso
+                    de cuidar a un animal durante toda su vida.
+                    Antes de hacerlo, debemos contar con tiempo,
+                    espacio y recursos para atender sus necesidades.
+                </p>
+
+                <a href="donaciones.html" class="boton-enlace">
+                    Tambien puedes ayudar con donaciones
+                </a>
+
+            </article>
+
         </section>
+
     </main>
 
+
+    <!-- Pie de pagina -->
     <footer>
+
         <p>Proyecto PAEC | Huellitas Comunitarias</p>
+
+        <p>
+            Promoviendo el respeto y el bienestar animal.
+        </p>
+
     </footer>
 
 </body>
