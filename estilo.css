@@ -1,5 +1,7 @@
-
-/* Estilos generales del proyecto */
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -8,65 +10,110 @@ body {
     background-color: #F4E9D8;
     color: #44382B;
 }
-
 h1, h2, h3 {
     line-height: 1.3;
 }
-
 img {
     max-width: 100%;
     height: auto;
     display: block;
 }
-
-/* Encabezado */
+/* Encabezado y logo */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    background-color: #6B8F71;
     padding: 15px 25px;
+    background-color: #6B8F71;
+}
+.encabezado-texto {
+    flex: 1;
+}
+header h1 {
+    margin: 0;
+    color: #F4E9D8;
 }
 
+header p {
+    margin: 5px 0;
+}
+.logo-pequeno {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+/* Menu de navegacion */
 .barra-navegacion {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 12px;
 }
-
-/* Botones de navegacion */
-.boton-nav {
-    text-decoration: none;
-    color: #44382B;
-    background-color: #F4E9D8;
+.barra-navegacion a {
     padding: 7px 14px;
-    border-radius: 5px;
-}
-
-.boton-nav:hover {
-    background-color: #DFA66B;
-}
-
-.boton-nav.activo {
-    background-color: #DFA66B;
+    border-radius: 6px;
+    background-color: #F4E9D8;
+    color: #44382B;
+    text-decoration: none;
     font-weight: bold;
 }
-
-/* Distribucion del contenido */
+.barra-navegacion a:hover,
+.barra-navegacion a.activo {
+    background-color: #DFA66B;
+}
+/* Contenido y barra lateral */
 main {
     display: flex;
+    align-items: flex-start;
     gap: 20px;
     padding: 20px;
 }
-
 aside {
     width: 25%;
+    flex-shrink: 0;
+    padding: 15px;
     background-color: #DFA66B;
+    border-radius: 8px;
+}
+section, .seccion-completa {
+    flex: 1;
+    min-width: 0;
     padding: 15px;
 }
+.barra-lateral h2,
+.aviso h3 {
+    margin-top: 0;
+}
 
+.imagen-lateral {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.imagen-principal {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Botones de contenido */
+.boton-enlace {
+    display: inline-block;
+    padding: 9px 14px;
+    margin-top: 8px;
+    background-color: #6B8F71;
+    color: #44382B;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.boton-enlace:hover {
+    background-color: #DFA66B;
+}
 
 /* Galeria de adopciones */
 .galeria {
@@ -76,27 +123,28 @@ aside {
     margin-top: 20px;
 }
 
-.ficha-animal {
-    background-color: #DFA66B;
+.ficha-animal, .aviso {
     padding: 15px;
-    border-radius: 6px;
+    background-color: #DFA66B;
+    border-radius: 8px;
 }
 
 .ficha-animal img {
     width: 100%;
-    height: 220px;
+    height: 200px;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
-section {
-    flex: 1;
-    min-width: 0;
-    padding: 15px;
+/* Donaciones y tabla */
+.listas-donaciones {
+    padding-left: 25px;
 }
 
+.listas-donaciones li {
+    margin-bottom: 8px;
+}
 
-/* Tabla de donaciones */
 .tabla-contenedor {
     width: 100%;
     overflow-x: auto;
@@ -108,8 +156,8 @@ table {
 }
 
 th, td {
-    border: 1px solid #6B8F71;
     padding: 10px;
+    border: 1px solid #6B8F71;
     text-align: left;
 }
 
@@ -118,7 +166,20 @@ th {
     color: #F4E9D8;
 }
 
-/* Ajustes para celulares */
+/* Pie de pagina */
+footer {
+    padding: 15px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #6B8F71;
+    color: #F4E9D8;
+}
+
+footer p {
+    margin: 4px;
+}
+
+/* Adaptacion a celulares */
 @media (max-width: 650px) {
     header {
         flex-direction: column;
@@ -127,26 +188,19 @@ th {
 
     main {
         flex-direction: column;
+        padding: 12px;
     }
 
-    aside, section {
-        width: auto;
-        box-sizing: border-box;
+    aside, section, .seccion-completa {
+        width: 100%;
     }
 
     .galeria {
         grid-template-columns: 1fr;
     }
-}
 
-/* Pie de pagina compartido */
-footer {
-    text-align: center;
-    background-color: #6B8F71;
-    padding: 15px;
-    margin-top: 10px;
-}
-
-footer p {
-    margin: 4px;
+    .logo-pequeno {
+        width: 70px;
+        height: 70px;
+    }
 }

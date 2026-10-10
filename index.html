@@ -3,48 +3,110 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Huellitas Comunitarias</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huellitas Comunitarias | Inicio</title>
+
+    <!-- Conectamos la hoja de estilos de las tres paginas -->
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
 
-    <!-- Encabezado del proyecto -->
+    <!-- Encabezado principal del proyecto -->
     <header>
-        <h1>Huellitas Comunitarias</h1>
+        <div class="encabezado-texto">
+            <h1>Huellitas Comunitarias</h1>
+            <p>Pequeñas acciones, grandes huellas</p>
+
+            <!-- Menu de navegacion entre las tres paginas -->
+            <nav class="barra-navegacion">
+                <a href="index.html" class="boton-nav activo">Inicio</a>
+                <a href="adopciones.html" class="boton-nav">Adopciones</a>
+                <a href="donaciones.html" class="boton-nav">Donaciones</a>
+            </nav>
+        </div>
+
+        <!-- Logo del proyecto -->
+        <img src="imágenes/logo.jpg"
+             alt="Logo de Huellitas Comunitarias"
+             class="logo-pequeno">
     </header>
-    
-<nav class="barra-navegacion">
-    <a href="index.html" class="boton-nav activo">Inicio</a>
-    <a href="adopciones.html" class="boton-nav">Adopciones</a>
-    <a href="donaciones.html" class="boton-nav">Donaciones</a>
-</nav>
 
-    <!-- Contenido principal -->
+    <!-- Contenido principal dividido en dos columnas -->
     <main>
+
+        <!-- Publicidad y mensaje de apoyo en el lado izquierdo -->
+        <aside>
+            <h2>¡Ayuda a una huellita!</h2>
+
+            <img src="imágenes/ayuda.jpg"
+                 alt="Persona ayudando a un animal"
+                 class="imagen-lateral">
+
+            <p>
+                Muchos perros y gatos necesitan alimento,
+                protección y una familia que los quiera.
+                ¡Cada pequeña acción puede hacer la diferencia!
+            </p>
+
+            <h3>¿Cómo puedes ayudar?</h3>
+
+            <p>
+                Puedes colaborar con nuestro centro de acopio
+                donando alimentos, cobijas y artículos de limpieza.
+            </p>
+
+            <a href="donaciones.html" class="boton-enlace">
+                Ver donaciones
+            </a>
+        </aside>
+
+        <!-- Articulo principal en el lado derecho -->
         <section>
-            <h2>Bienvenidos</h2>
-            <p>Proyecto PAEC sobre el bienestar animal.</p>
-            
-<h3>¿Cuál es nuestro propósito?</h3>
+            <article>
+                <h2>Bienvenidos a Huellitas Comunitarias</h2>
 
-<p>
-    Buscamos promover la adopción responsable, el respeto
-    hacia los animales y la participación de la comunidad.
-</p>
+                <img src="imágenes/inicio.jpg"
+                     alt="Perros y gatos que necesitan cuidados"
+                     class="imagen-principal">
 
-<h3>Concientización</h3>
+                <p>
+                    Huellitas Comunitarias es un proyecto PAEC
+                    que busca promover el bienestar animal mediante
+                    la adopción responsable, la solidaridad y la
+                    participación de nuestra comunidad.
+                </p>
 
-<p>
-    Los perros y gatos necesitan alimento, protección,
-    atención y cariño. Cuidarlos es una responsabilidad
-    que debemos asumir con compromiso.
-</p>
+                <h3>¿Cuál es nuestro propósito?</h3>
+
+                <p>
+                    Buscamos fomentar el respeto hacia los animales,
+                    apoyar a los que necesitan ayuda y crear
+                    conciencia sobre la importancia de ofrecerles
+                    una vida digna y segura.
+                </p>
+
+                <h3>Concientización</h3>
+
+                <p>
+                    Los perros y gatos necesitan alimento,
+                    protección, atención y cariño. No son juguetes
+                    ni objetos que podamos abandonar cuando dejan
+                    de interesarnos. Cuidarlos es una responsabilidad
+                    que debemos asumir con compromiso.
+                </p>
+
+                <a href="adopciones.html" class="boton-enlace">
+                    Conoce a los animales
+                </a>
+            </article>
         </section>
+
     </main>
 
-    <!-- Pie de pagina -->
+    <!-- Pie de pagina del proyecto -->
     <footer>
-        <p>Proyecto Huellitas Comunitarias</p>
+        <p>Huellitas Comunitarias | Proyecto PAEC</p>
+        <p>Promoviendo el respeto y el bienestar animal  - Creado por el alumno: Martinez Cortes Macario</p>
     </footer>
 
 </body>

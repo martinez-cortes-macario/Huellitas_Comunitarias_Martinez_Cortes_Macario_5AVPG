@@ -1,72 +1,169 @@
-
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Huellitas Comunitarias | Donaciones</title>
+
+    <!-- Conexion con la hoja de estilos -->
     <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body>
 
-    <!-- Encabezado y navegacion -->
+    <!-- Encabezado principal del sitio -->
     <header>
-        <h1>Huellitas Comunitarias</h1>
+        <div class="encabezado-texto">
 
-        <nav class="barra-navegacion">
-            <a href="index.html">Inicio</a>
-            <a href="adopciones.html">Adopciones</a>
-            <a href="donaciones.html">Donaciones</a>
-        </nav>
+            <h1>Huellitas Comunitarias</h1>
+            <p>Pequeñas ayudas, grandes huellas</p>
+
+            <!-- Menu de navegacion -->
+            <nav class="barra-navegacion">
+                <a href="index.html" class="boton-nav">
+                    Inicio
+                </a>
+
+                <a href="adopciones.html" class="boton-nav">
+                    Adopciones
+                </a>
+
+                <a href="donaciones.html" class="boton-nav activo">
+                    Donaciones
+                </a>
+            </nav>
+
+        </div>
+
+        <!-- Logo del proyecto -->
+        <img src="imágenes/logo.jpg"
+             alt="Logo de Huellitas Comunitarias"
+             class="logo-pequeno">
     </header>
 
-    <!-- Informacion de la campaña -->
-    <main>
-        <section>
+
+    <!-- Contenido principal: barra lateral y seccion de donaciones -->
+    <main class="pagina-completa">
+
+        <!-- Barra lateral izquierda para promover las adopciones -->
+        <aside class="barra-lateral">
+
+            <h2>¡Adopta un amigo!</h2>
+
+            <img src="imágenes/ayuda.jpg"
+                 alt="Apoyo y cuidado de animales"
+                 class="imagen-lateral">
+
+            <p>
+                Muchos perros y gatos esperan una familia que les
+                brinde amor, protección y cuidados. La adopción
+                responsable puede cambiar sus vidas.
+            </p>
+
+            <a href="adopciones.html" class="boton-enlace">
+                Conoce a nuestros animales
+            </a>
+
+        </aside>
+
+
+        <!-- Informacion de la campaña de donaciones -->
+        <section class="seccion-completa">
+
             <h2>Centro de acopio</h2>
-            <p>Tu ayuda puede mejorar la vida de muchos animales.</p>
-            
-<h3>Lista de suministros</h3>
 
-<ul>
-    <li>Alimento para perros y gatos.</li>
-    <li>Cobijas y toallas limpias.</li>
-    <li>Platos para agua y comida.</li>
-    <li>Bolsas para residuos.</li>
-    <li>Articulos de limpieza.</li>
-</ul>
+            <p>
+                Tu ayuda puede mejorar la vida de muchos animales.
+                Cada donación contribuye a que reciban alimento,
+                protección y los cuidados que necesitan.
+            </p>
 
-<h3>Informacion del centro de acopio</h3>
 
-<div class="tabla-contenedor">
-    <table>
-        <thead>
-            <tr>
-                <th>Informacion</th>
-                <th>Detalles</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Lugar</td>
-                <td>Plantel escolar, por confirmar</td>
-            </tr>
-            <tr>
-                <td>Fecha</td>
-                <td>Por confirmar</td>
-            </tr>
-            <tr>
-                <td>Horario</td>
-                <td>Por confirmar</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+            <!-- Lista de suministros que se pueden donar -->
+            <article>
+
+                <h3>Lista de suministros</h3>
+
+                <ul class="listas-donaciones">
+                    <li>Alimento para perros y gatos.</li>
+                    <li>Cobijas y toallas limpias.</li>
+                    <li>Platos para agua y comida.</li>
+                    <li>Bolsas para residuos.</li>
+                    <li>Artículos de limpieza.</li>
+                </ul>
+
+            </article>
+
+
+            <!-- Tabla con la informacion del centro de acopio -->
+            <article>
+
+                <h3>Información del centro de acopio</h3>
+
+                <div class="tabla-contenedor">
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Información</th>
+                                <th>Detalles</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Lugar</td>
+                                <td>Plantel escolar, por confirmar</td>
+                            </tr>
+
+                            <tr>
+                                <td>Fecha</td>
+                                <td>Por confirmar</td>
+                            </tr>
+
+                            <tr>
+                                <td>Horario</td>
+                                <td>Por confirmar</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </article>
+
+
+            <!-- Aviso para invitar a participar en la campaña -->
+            <article class="aviso">
+
+                <h3>¡Toda ayuda cuenta!</h3>
+
+                <p>
+                    Antes de donar, verifica que los artículos estén
+                    limpios, en buen estado y sean adecuados para
+                    los animales. Gracias por apoyar nuestro proyecto.
+                </p>
+
+            </article>
+
         </section>
+
     </main>
 
+
+    <!-- Pie de pagina -->
     <footer>
+
         <p>Proyecto PAEC | Huellitas Comunitarias</p>
+
+        <p>
+            Promoviendo el respeto y el bienestar animal - Creado por el alumno: Martinez Cortes Macario
+        </p>
+
     </footer>
 
 </body>
 </html>
+```
